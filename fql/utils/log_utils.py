@@ -142,5 +142,5 @@ def get_wandb_video(renders=None, n_cols=None, fps=15):
     renders = np.array(renders)  # (n, t, h, w, c)
     print(f"Renders shape: {renders.shape}")
     renders = reshape_video(renders, n_cols)  # (t, c, nr * h, nc * w)
-
+    print(f"Videos shape: {renders.shape}")
     return wandb.Video(renders, fps=fps, format='mp4')
