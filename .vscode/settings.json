@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.linux": {
+        "WANDB_BASE_URL": "https://api.bandw.top"
+    },
+    "python.useEnvironmentsExtension": true
+}

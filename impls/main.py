@@ -44,7 +44,7 @@ config_flags.DEFINE_config_file('agent', 'agents/gciql.py', lock_config=False)
 
 def main(_):
     # Set up logger.
-    exp_name = get_exp_name(FLAGS.seed)
+    exp_name = f"{FLAGS.agent['agent_name']}_{FLAGS.env_name}_{get_exp_name(FLAGS.seed) }"
     setup_wandb(project='OGBench', group=FLAGS.run_group, name=exp_name)
 
     FLAGS.save_dir = os.path.join(FLAGS.save_dir, wandb.run.project, FLAGS.run_group, exp_name)

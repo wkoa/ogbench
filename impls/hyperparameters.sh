@@ -516,7 +516,7 @@ python main.py --env_name=visual-antmaze-teleport-explore-v0 --train_steps=50000
 # visual-antmaze-teleport-explore-v0 (CRL)
 python main.py --env_name=visual-antmaze-teleport-explore-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/crl.py --agent.actor_p_randomgoal=1.0 --agent.actor_p_trajgoal=0.0 --agent.alpha=0.003 --agent.batch_size=256 --agent.encoder=impala_small
 # visual-antmaze-teleport-explore-v0 (HIQL)
-python main.py --env_name=visual-antmaze-teleport-explore-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/hiql.py --agent.actor_p_randomgoal=1.0 --agent.actor_p_trajgoal=0.0 --agent.batch_size=256 --agent.encoder=impala_small --agent.high_alpha=10.0 --agent.low_actor_rep_grad=True --agent.low_alpha=10.0
+python3 main.py --env_name=visual-antmaze-teleport-explore-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/hiql.py --agent.actor_p_randomgoal=1.0 --agent.actor_p_trajgoal=0.0 --agent.batch_size=256 --agent.encoder=impala_small --agent.high_alpha=10.0 --agent.low_actor_rep_grad=True --agent.low_alpha=10.0
 
 # visual-humanoidmaze-medium-navigate-v0 (GCBC)
 python main.py --env_name=visual-humanoidmaze-medium-navigate-v0 --train_steps=500000 --eval_episodes=50 --agent=agents/gcbc.py --agent.batch_size=256 --agent.encoder=impala_small
@@ -597,7 +597,7 @@ python main.py --env_name=visual-humanoidmaze-giant-stitch-v0 --train_steps=5000
 python main.py --env_name=visual-humanoidmaze-giant-stitch-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/hiql.py --agent.actor_p_randomgoal=0.5 --agent.actor_p_trajgoal=0.5 --agent.batch_size=256 --agent.discount=0.995 --agent.encoder=impala_small --agent.high_alpha=3.0 --agent.low_actor_rep_grad=True --agent.low_alpha=3.0 --agent.subgoal_steps=100
 
 # cube-single-play-v0 (GCBC)
-python main.py --env_name=cube-single-play-v0 --eval_episodes=50 --agent=agents/gcbc.py
+python3 main.py --env_name=cube-single-play-v0 --eval_episodes=50 --agent=agents/gcbc.py
 # cube-single-play-v0 (GCIVL)
 python main.py --env_name=cube-single-play-v0 --eval_episodes=50 --agent=agents/gcivl.py --agent.alpha=10.0
 # cube-single-play-v0 (GCIQL)
@@ -841,7 +841,7 @@ python main.py --env_name=visual-cube-single-play-v0 --train_steps=500000 --eval
 # visual-cube-single-play-v0 (CRL)
 python main.py --env_name=visual-cube-single-play-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/crl.py --agent.alpha=3.0 --agent.batch_size=256 --agent.encoder=impala_small --agent.p_aug=0.5
 # visual-cube-single-play-v0 (HIQL)
-python main.py --env_name=visual-cube-single-play-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/hiql.py --agent.batch_size=256 --agent.encoder=impala_small --agent.high_alpha=3.0 --agent.low_actor_rep_grad=True --agent.low_alpha=3.0 --agent.p_aug=0.5 --agent.subgoal_steps=10
+python3 main.py --env_name=visual-cube-single-play-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/hiql.py --agent.batch_size=256 --agent.encoder=impala_small --agent.high_alpha=3.0 --agent.low_actor_rep_grad=True --agent.low_alpha=3.0 --agent.p_aug=0.5 --agent.subgoal_steps=10
 
 # visual-cube-double-play-v0 (GCBC)
 python main.py --env_name=visual-cube-double-play-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/gcbc.py --agent.batch_size=256 --agent.encoder=impala_small --agent.p_aug=0.5
@@ -893,7 +893,7 @@ python main.py --env_name=visual-cube-single-noisy-v0 --train_steps=500000 --eva
 # visual-cube-single-noisy-v0 (CRL)
 python main.py --env_name=visual-cube-single-noisy-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/crl.py --agent.alpha=0.1 --agent.batch_size=256 --agent.encoder=impala_small --agent.p_aug=0.5
 # visual-cube-single-noisy-v0 (HIQL)
-python main.py --env_name=visual-cube-single-noisy-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/hiql.py --agent.batch_size=256 --agent.encoder=impala_small --agent.high_alpha=3.0 --agent.low_actor_rep_grad=True --agent.low_alpha=3.0 --agent.p_aug=0.5 --agent.subgoal_steps=10
+python3 main.py --env_name=visual-cube-single-noisy-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/hiql.py --agent.batch_size=256 --agent.encoder=impala_small --agent.high_alpha=3.0 --agent.low_actor_rep_grad=True --agent.low_alpha=3.0 --agent.p_aug=0.5 --agent.subgoal_steps=10
 
 # visual-cube-double-noisy-v0 (GCBC)
 python main.py --env_name=visual-cube-double-noisy-v0 --train_steps=500000 --eval_episodes=50 --eval_on_cpu=0 --agent=agents/gcbc.py --agent.batch_size=256 --agent.encoder=impala_small --agent.p_aug=0.5
